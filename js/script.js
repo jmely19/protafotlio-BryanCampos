@@ -139,6 +139,29 @@
 		});
 	}
 
+	if ( $('.a-carousel-awards').length ) {
+		$('.a-carousel-awards').owlCarousel({
+			items: 3,
+			navText: ['<i class="lni lni-chevron-left"></i>','<i class="lni lni-chevron-right"></i>'],
+			smartSpeed: 750,
+			margin: 30,
+			dots: true,
+			nav: true,
+			loop: false,
+			responsive: {
+				0: {
+					items: 1
+				},
+				768: {
+					items: 2
+				},
+				992: {
+					items: 3
+				}
+			}
+		});
+	}
+
 
 	/*-------------------------------------------------------------------------------
 	  Forms

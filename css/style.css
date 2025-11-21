@@ -146,10 +146,6 @@ a.text-success:hover {
 	color: #ffffff;
 }
 
-.font-italic {
-	font-style: italic;
-}
-
 
 
 /* 1.3 Buttons */
@@ -1039,10 +1035,6 @@ label.error {
 	background-color: #f5f4f0;
 }
 
-.slide-dark-bg {
-	background-color: #1f2044;
-}
-
 .slide-num {
 	margin-bottom: 1rem;
 	position: relative;
@@ -1528,70 +1520,6 @@ label.error {
 	text-decoration: none;
 }
 
-/* 4.3.1 Slide Project Detail */
-
-.slide-personal-project-detail {
-	position: relative;
-}
-
-.slide-personal-project-detail .slide-container {
-	padding-top: 7.75rem;
-	padding-bottom: 3.25rem;
-}
-
-.slide-personal-project-detail .slide-title {
-	margin-bottom: 1.5rem;
-}
-
-.slide-personal-project-detail .slide-descr-projects {
-	min-height: auto;
-	margin-bottom: 1.5rem;
-}
-
-.project-gallery {
-	margin-top: 2rem;
-}
-
-.project-gallery img {
-	width: 100%;
-	height: auto;
-	display: block;
-	transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
-}
-
-.project-gallery img:hover {
-	transform: scale(1.02);
-	box-shadow: 0 10px 30px rgba(0,0,0,.3);
-}
-
-.project-gallery .row {
-	margin-left: -15px;
-	margin-right: -15px;
-}
-
-.project-gallery .row > [class*="col-"] {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-@media (min-width: 768px) {
-	.slide-personal-project-detail .slide-container {
-		padding-top: 8.75rem;
-		padding-bottom: 4.25rem;
-	}
-	
-	.project-gallery {
-		margin-top: 0;
-	}
-}
-
-@media (min-width: 992px) {
-	.slide-personal-project-detail .slide-container {
-		padding-top: 9.75rem;
-		padding-bottom: 5.25rem;
-	}
-}
-
 
 
 /* 4.4 Slide Awards */
@@ -1669,6 +1597,17 @@ label.error {
 
 .carousel-awards .award-item {
 	margin-top: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.carousel-awards .owl-stage {
+	display: flex;
+}
+
+.carousel-awards .owl-item {
+	display: flex;
 	height: auto;
 }
 
@@ -2139,22 +2078,6 @@ a:hover .center-icon i {
 
 .social a:hover {
 	color: #000000;
-}
-
-.social-rounded a {
-	border-radius: 50%;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	width: 2.5rem;
-	height: 2.5rem;
-	background-color: rgba(255,255,255,.1);
-	transition: background-color .3s ease, color .3s ease;
-}
-
-.social-rounded a:hover {
-	background-color: rgba(255,255,255,.2);
-	color: #ffffff;
 }
 
 .social-fixed {
